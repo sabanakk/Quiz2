@@ -89,8 +89,11 @@ GET	/api/performance/	List performance reviews
 POST	/api/performance/	Add performance review
 
 GET	/api/chart/	View Chart.js performance
+
 GET	/swagger/	Swagger API docs
+
 POST	/api/token/	Get JWT token
+
 POST	/api/token/refresh/	Refresh JWT token
 
 ### 📊 Chart View
