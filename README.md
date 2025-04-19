@@ -64,18 +64,27 @@ python manage.py createsuperuser
 python manage.py runserver
 
 ### JWT Authentication
+
 Get Token
+
 ### POST /api/token/
 json
+
 {
   "username": "yourusername",
   "password": "yourpassword"
 }
+
 Use the Token
+
 In request headers:
+
 Authorization: Bearer <your_token>
+
 🔗 API Endpoints
+
 Method	URL	Description
+
 GET	/api/employees/	List all employees
 
 POST	/api/employees/	Add a new employee
