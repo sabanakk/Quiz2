@@ -26,3 +26,8 @@ A full-featured backend API built with **Django**, **Django REST Framework**, an
 
 git clone https://github.com/sabanakk/quiz2.git
 
+### 2. Create and Activate a Virtual Environment
+py -m venv venv
+venv\Scripts\activate
+
+
