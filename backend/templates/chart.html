@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Performance Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="performanceChart" width="400" height="200"></canvas>
+  <script>
+    const data = {{ data|safe }};
+    const labels = Object.keys(data);
+    const datasets = Object.entries(data).map(([key, values], i) => ({
+        label: key,
+        data: values,
+        borderColor: `hsl(${i * 60}, 70%, 50%)`,
+        fill: false
+    }));
+    new Chart(document.getElementById("performanceChart"), {
+      type: 'line',
+      data: { labels: ['Review 1', 'Review 2', 'Review 3'], datasets }
+    });
+  </script>
+</body>
+</html>
