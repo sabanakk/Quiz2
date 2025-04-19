@@ -28,7 +28,8 @@ git clone https://github.com/sabanakk/quiz2.git
 
 ### 2. Create and Activate a Virtual Environment
 py -m venv venv
-venv\Scripts\activate
+
+To activate : venv\Scripts\activate
 
 ### 3. Install Dependencies
 pip install -r requirements.txt
