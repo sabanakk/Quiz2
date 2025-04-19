@@ -35,8 +35,10 @@ To activate : venv\Scripts\activate
 pip install -r requirements.txt
 
 ### 4. Configure Database (PostgreSQL Recommended)
-Edit backend/settings.py:
+backend/settings.py:
+
 DATABASES = {
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'yourdbname',
@@ -49,6 +51,7 @@ DATABASES = {
 
 ### 5. Run Migrations
 python manage.py makemigrations
+
 python manage.py migrate
 
 ### 6. Seed the Database (Fake Data)
@@ -74,11 +77,17 @@ Authorization: Bearer <your_token>
 🔗 API Endpoints
 Method	URL	Description
 GET	/api/employees/	List all employees
+
 POST	/api/employees/	Add a new employee
+
 GET	/api/attendance/	List attendance records
+
 POST	/api/attendance/	Add attendance record
+
 GET	/api/performance/	List performance reviews
+
 POST	/api/performance/	Add performance review
+
 GET	/api/chart/	View Chart.js performance
 GET	/swagger/	Swagger API docs
 POST	/api/token/	Get JWT token
@@ -87,6 +96,7 @@ POST	/api/token/refresh/	Refresh JWT token
 ### 📊 Chart View
 Visit:
 http://localhost:8000/api/chart/
+
 Renders a performance chart using Chart.js.
 
 ### 👤 Maintainer
